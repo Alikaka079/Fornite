@@ -1,91 +1,33 @@
 @font-face {
-    font-family: Tanha;
-    src: url(/assets/Font/persianFont/tanha-font-v0.9/Tanha.woff);
-    src: url(/assets/Font/persianFont/tanha-font-v0.9/Tanha.woff2);
+    font-family: vazir;
+    src: url(/assets/Font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff);
+    src: url(/assets/Font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff2);
 }
-
-#body {
-    direction: rtl;
-    font-family: Tanha;
-    padding: 0;
+*{
     margin: 0;
-    background: center / cover, no-repeat;
-    background-color: rgb(114, 113, 113);
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+    font-family: vazir;
+    text-align: center;
+    padding: 8rem 0 0 0;
     
 }
-
-
-/*شروع هدر  */
-header {
-    padding-top: 1px;
-    text-align: center;
-    background-color: aqua;
-    width: 100vw;
-    height: 150px;
-}
-
-nav ul li {
-    padding: 15px;
-    list-style-type: none;
-    display: inline-block;
-}
-
-nav a {
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 900;
-}
-
-/* پایان هدر */
-
-/*  شروع مین */
-main {
-
-    width: 100vw;
+section{
+    width: 500px;
     height: 500px;
-    text-align: center;
-    background: url(/assets/images/3fort.jpg) center / cover, no-repeat;
-}
-
-div {
-    background-color: rgba(255, 255, 255, 0.582);
-
-}
-
-table {
+    border: 1px solid black;
     display: inline-block;
-    cursor: pointer;
-    border-collapse: collapse;
-    color: black;
-}
-
-/* tr:hover{
     background-color: white;
-} */
-/* tr:nth-child(even) {
-  background-color: #D6EEEE;
-} */
-tr th {
-    width: 300px;
-    border: 2px solid white;
-
+    
 }
-
-tr td {
-    border: 2px solid white;
+h1 , h3{
+         display: flex;
+        flex-direction: row-reverse;
+        padding: 0 5px 0 0;   
 }
-
-/* پایان مین */
-
-footer {
-    background-color: brown;
-    padding: 15px 0 0 0;
-    text-align: center;
-}
-
-.img {
-    background-color: brown;
-    display: inline-block;
-    box-shadow: 10px 2px 0;
-
+span{
+    color: red;
 }

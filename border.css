@@ -57,11 +57,10 @@ body {
     
   }
   a:hover{
-       
-        transition: all 1.5s;
-        background-color: rgb(206, 203, 26);
-        border-radius: 10px;
+        transition: all 1.6s;
+        border-top: 4px solid green;
         padding: 0 10px 0 10px;
+
     }
     a:active{
         background-color: blue;

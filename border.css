@@ -6,71 +6,107 @@
 
 body {
     font-family: vazir;
-    box-sizing: border-box;
-    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, red, green, black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
     direction: rtl;
+
 }
-  nav{
+
+nav {
     background-color: goldenrod;
     width: 100vw;
     height: 50px;
     padding-top: 10px;
 
 
-  }
-  ul{
+}
+
+ul {
     list-style-type: none;
     display: inline-block;
     margin: 0;
     padding: 0 10px 0 0;
 
-    
-  }
-  img{
+
+}
+
+img {
     width: 90px;
     vertical-align: middle;
-  }
-  li{
+}
+
+li {
     padding: 0 10px 0 10px;
     display: inline-block;
-  }
-  a{
+}
+
+a {
     text-decoration: none;
     font-size: 20px;
     font-family: vazir;
     color: snow;
-    
-  }
-  input{
+
+}
+
+input {
     width: 210px;
     height: 30px;
     border-radius: 15px;
     border: none;
     margin: 0 15px 0 0;
-    
-  }
-  input::placeholder{
+
+}
+
+input::placeholder {
     font-size: 15px;
     padding: 0 5px 0 0;
     
-  }
-  a:hover{
-        transition: all 1.6s;
-        border-top: 4px solid green;
-        padding: 0 10px 0 10px;
 
-    }
-    a:active{
-        background-color: blue;
-    }
-    a:focus{
-        background-color: olivedrab;
+}
+
+input:focus {
+    outline: none;
+}
+
+a:hover {
+    
+    transition: all 1.6s;
+    text-decoration-line: overline;
+    text-decoration-color: green;
+    padding: 0 10px 0 10px;
+
+}
+
+a:active {
+    background-color: blue;
+}
+
+a:focus {
+    background-color: olivedrab;
+
+}
+
+a:visited {
+    background-color: rgb(0, 255, 234);
+
+}
+
+@media (max-width: 400px) {
+    
+    li {
+        width: 100%;
+        text-align: center;
         
     }
-    a:visited{
-        background-color: rgb(0, 255, 234);
-        
+    a {
+        width: 100px;
+        height: 30px;
     }
-          
+    
+}

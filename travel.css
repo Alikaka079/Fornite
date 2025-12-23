@@ -1,80 +1,77 @@
-@font-face {
+/* @font-face {
     font-family: vazir;
     src: url(/assets/Font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff) format('woff');
     src: url(/assets/Font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff2) format('woff2');
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
-    font-family: vazir;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(45deg, red, green, black);
+body{
+    background-image: url(/assets/images/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+}
+.glass-container{
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    text-align: center;
+    width: 980px;
+    height: 620px;
+    background-image: url(/assets/images/front.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    padding: 30px 8%;
+}
+.logo{
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
 
 }
-
-nav {
-    background-color: goldenrod;
-    width: 100vw;
-    height: 50px;
-    padding-top: 10px;
-
+nav ul{
+    flex: 1;
+    text-align: right;
 
 }
-
-ul {
-    list-style-type: none;
+nav ul li{
+    list-style: none;
     display: inline-block;
-    margin: 0;
-    padding: 0 10px 0 0;
-
-
+    margin: 0 20px;
+    transition: 0.1s ease-out;
 }
 
-img {
-    width: 90px;
-    vertical-align: middle;
-}
+nav ul li:hover{
+    border-bottom: 2px solid #fff;
 
-li {
-    padding: 0 10px 0 10px;
-    display: inline-block;
 }
-
-a {
+nav ul li a{
+    color: #fff;
     text-decoration: none;
-    font-size: 20px;
-    font-family: vazir;
-    color: snow;
+    font-size: 18px;
+    font-weight: bold;
 
 }
-
-input {
-    width: 210px;
-    height: 30px;
-    border-radius: 15px;
-    border: none;
-    margin: 0 15px 0 0;
-
+img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -7px;
+    transition: 0.1 ease;
 }
-
-input::placeholder {
-    font-size: 15px;
-    padding: 0 5px 0 0;
-    
-
+img:hover{
+    border: 2px solid #fff;
 }
-
-input:focus {
-    outline: none;
-}
-
-
-
-
-
